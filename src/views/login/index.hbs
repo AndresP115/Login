@@ -1,7 +1,14 @@
+
+
+{{!-- Barra de Navegación --}}
 <div class="block mx-auto my-12 p-8 bg-white w-1/3 border border-gray-200 rounded-lg 
 shadow-lg text-gray-800">
+
+    {{!-- Ttitulo arriba del formulario --}}
     <h1 class="text-3xl font-bold text-center ">Login</h1>
 
+
+    {{!-- Formulario --}}
     <form action="" method="POST" class="mt-4">
 
         <input type="email" name="email" placeholder="Email" 
@@ -14,6 +21,8 @@ shadow-lg text-gray-800">
         <button type="submit" class="rounded-md bg-green-500 w-full text-lg text-white
         font-semibold p-2 my-3 hover:bg-green-600 focus:bg-green-700">Send</button>
 
+
+        {{!-- Mostramos el error --}}
         {{#if error}}
         <p class="text-red-500 font-bold text-lg my-3">* {{error}}</p>
         {{/if}}

@@ -6,11 +6,11 @@
 
     <title>Login Node.js Mysql</title>
     
-    <!-- Tailwind CSS Link -->
+    <!-- Conexión con Tailwind CSS -->
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
 
-    <!-- Fontawesome Link -->
+    <!-- Conexión con Fontawesome -->
     <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
  
   </head>
@@ -23,6 +23,7 @@
         
         <ul class="w-1/2 px-16 ml-auto flex justify-end pt-1">
 
+        {{!-- Definimos los parametros a mostrar, unos si el usuario esta loggeado y otros cuando no --}}
         {{#if name}}
             <li class="nav-item px-4">
                 <p class="front-semibold"> {{name}} </p>
